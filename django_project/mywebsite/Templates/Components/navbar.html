@@ -1,0 +1,19 @@
+<nav class="navbar">
+    <ul class="navbar-nav">
+        <li class="{% if request.path == '/' %}active{% endif %}">
+            <a href="{% url 'about' %}">About</a>
+        </li>
+        <li class="{% if request.path == '/profile/' %}active{% endif %}">
+            <a href="{% url 'profile' %}">Profile</a>
+        </li>
+        <li class="{% if request.path == '/education/' %}active{% endif %}">
+            <a href="{% url 'education' %}">Education</a>
+        </li>
+        <li class="{% if request.path == '/experience/' %}active{% endif %}">
+            <a href="{% url 'experience' %}">Experience</a>
+        </li>
+        <li class="{% if request.path == '/social/' %}active{% endif %}">
+            <a href="{% url 'social' %}">Social Media</a>
+        </li>
+    </ul>
+</nav>

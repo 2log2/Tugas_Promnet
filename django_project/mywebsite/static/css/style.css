@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar a {
+    color: blue;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+.navbar-nav li a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.navbar-nav .active a {
+    font-weight: 600;
+    color: #007bff;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
